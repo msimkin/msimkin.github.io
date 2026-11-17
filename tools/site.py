@@ -42,7 +42,7 @@ CONTACT = "firstname at univariate.org"
 LINKS = [
     ("x.com/Simk1n", "https://x.com/Simk1n"),
     ("github.com/msimkin", "https://github.com/msimkin"),
-    # ("dblp", "https://dblp.org/pid/..."),
+    ("dblp.org/pid/58/2782sb", "https://dblp.org/pid/58/2782sb.html"),
 ]
 HOME_POSTS = 5          # posts shown on the home page
 THEOREM_KINDS = ["theorem", "lemma", "corollary", "proposition", "claim", "definition", "remark", "example"]
