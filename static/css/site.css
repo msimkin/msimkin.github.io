@@ -219,11 +219,11 @@ blockquote > p:first-child::before { content: "“"; color: var(--hi-t); } block
 @media (min-width: 681px) and (max-width: 960px) { .filler.f2 { display: block; } }
 .ab .bio { margin: 0; text-wrap: pretty; font-size: 15.5px; line-height: 1.8; color: var(--text); }
 .ab .ti { font-weight: 400; }
-.ab .links { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 6px; font-size: 14px; line-height: 1.5; }
-.ab .links a { color: var(--muted); transition: color .2s; }
-.ab .links a::after { content: " ↗"; color: var(--dim); transition: color .2s; }
-.ab .links a:hover { color: var(--ink); }
-.ab .links a:hover::after { color: var(--hi-t); }
+/* icon links: small hairline tiles, like cells of the grid in miniature */
+.ab .links { list-style: none; margin: 18px 0 0; padding: 0; display: flex; gap: 8px; }
+.ab .links a.ic { display: grid; place-items: center; width: 36px; height: 36px; border: 1px solid var(--line2); color: var(--muted); transition: color .2s, border-color .2s, background-color .2s; }
+.ab .links a.ic svg { width: 15px; height: 15px; display: block; }
+.ab .links a.ic:hover, .ab .links a.ic:focus-visible { color: var(--ink); border-color: var(--hi); background: rgba(59,108,255,.06); }
 
 .notfound { padding-top: clamp(80px, 14vh, 180px); }
 .notfound .code404 { margin: 0 0 18px; font-size: 13px; color: var(--muted); }

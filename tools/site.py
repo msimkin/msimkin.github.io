@@ -38,11 +38,12 @@ BIO = ("I am a tenure-track professor at Aarhus University and a cryptography re
        "Claudio Orlandi, and stayed on as a postdoctoral researcher with Kasper Green Larsen. On the "
        "industry side, I was a cryptography researcher at the Ethereum Foundation before joining Flashbots.")
 CONTACT = "firstname at univariate.org"
-# shown under the email, in this order: (label, url). Add or remove lines freely.
+# icon links shown under the email, in this order: (name, url, icon file in static/icons/).
+# Icons are Simple Icons (CC0, simpleicons.org); add a new one by dropping its SVG into static/icons/.
 LINKS = [
-    ("x.com/Simk1n", "https://x.com/Simk1n"),
-    ("github.com/msimkin", "https://github.com/msimkin"),
-    ("dblp.org/pid/58/2782sb", "https://dblp.org/pid/58/2782sb.html"),
+    ("X", "https://x.com/Simk1n", "x"),
+    ("GitHub", "https://github.com/msimkin", "github"),
+    ("dblp", "https://dblp.org/pid/58/2782sb.html", "dblp"),
 ]
 HOME_POSTS = 5          # posts shown on the home page
 THEOREM_KINDS = ["theorem", "lemma", "corollary", "proposition", "claim", "definition", "remark", "example"]
@@ -419,6 +420,13 @@ def plain_grid(cells_fn, items, tag="ul", cls="mod"):
     return f'      <{tag} class="{cls}">\n        ' + "\n        ".join(cells) + f"\n      </{tag}>"
 
 
+def icon(name):
+    """Inline an SVG from static/icons/ so it takes the text colour (currentColor)."""
+    svg = (ROOT / "static" / "icons" / f"{name}.svg").read_text(encoding="utf-8")
+    svg = re.sub(r"<title>.*?</title>", "", svg)
+    return svg.replace('role="img"', 'aria-hidden="true" focusable="false" fill="currentColor"', 1)
+
+
 def nav(current):
     items = [("writing", "/writing/"), ("publications", "/publications/"), ("about", "/#about")]
     cur = ' aria-current="page"'
@@ -482,7 +490,8 @@ class Builder:
         pubs_html = '      <ol class="mod p">\n        ' + "\n        ".join(cells) + "\n      </ol>"
         home = fill("home.html", tagline="".join(f'<span class="tl">{esc(t)}</span>' for t in split_sentences(TAGLINE)), writing=writing_grid(posts, home=True),
                     publications=pubs_html, bio=esc(BIO), contact=esc(CONTACT),
-                    links="".join(f'<li><a href="{esc(u)}" rel="me">{esc(l)}</a></li>' for l, u in LINKS))
+                    links="".join(f'<li><a class="ic" href="{esc(u)}" rel="me" aria-label="{esc(n)}" title="{esc(n)}">{icon(i)}</a></li>'
+                                  for n, u, i in LINKS))
         self.page("index.html", home, "Mark Simkin", TAGLINE,
                   math=any(p.excerpt_has_math for p in posts[:HOME_POSTS]))
 
