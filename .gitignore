@@ -1,0 +1,8 @@
+.venv/
+_site/
+_site.tmp/
+_preview/
+_preview.tmp/
+drafts/
+__pycache__/
+.DS_Store

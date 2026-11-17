@@ -1,0 +1,589 @@
+[
+  {
+    "title": "Faster Data Structures Have Less Access Pattern Leakage",
+    "authors": "Mathias Hall-Andersen, Mark Simkin, Benedikt Wagner",
+    "venue": "In Submission",
+    "year": null,
+    "links": []
+  },
+  {
+    "title": "Silent Threshold Encryption with One-Shot Adaptive Security",
+    "authors": "Mathias Hall-Andersen, Mark Simkin, Benedikt Wagner",
+    "venue": "In Submission",
+    "year": null,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "http://ia.cr/2025/1384"
+      }
+    ]
+  },
+  {
+    "title": "Time-Based Cryptography From Weaker Assumptions: Randomness Beacons, Delay Functions and More",
+    "authors": "Damiano Abram, Lawrence Roy, Mark Simkin",
+    "venue": "In Submission",
+    "year": null,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "http://ia.cr/2024/769"
+      }
+    ]
+  },
+  {
+    "title": "Robust Distributed Arrays: Provably Secure Networking for Data Availability Sampling",
+    "authors": "Dankrad Feist, Gottfried Herold, Mark Simkin, Benedikt Wagner",
+    "venue": "CCS 2026",
+    "year": 2026,
+    "links": [
+      {
+        "label": "Arxiv",
+        "url": "https://arxiv.org/abs/2504.13757"
+      }
+    ],
+    "selected": true
+  },
+  {
+    "title": "Scale, Round, Break: Simple Leakage Attacks on Secret Sharing Schemes",
+    "authors": "Katharina Boudgoust, Mark Simkin",
+    "venue": "Asiacrypt 2026",
+    "year": 2026,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "http://ia.cr/2026/833"
+      }
+    ],
+    "selected": true
+  },
+  {
+    "title": "Oblivious Ciphertext Compression via Linear Codes",
+    "authors": "Pascal Giorgi, Bruno Grenet, Mark Simkin",
+    "venue": "Eurocrypt 2026",
+    "year": 2026,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "http://ia.cr/2026/329"
+      }
+    ],
+    "selected": true
+  },
+  {
+    "title": "Time/Space Tradeoffs for Generic Attacks on Delay Functions",
+    "authors": "Kasper Green Larsen, Mark Simkin",
+    "venue": "TCC 2025",
+    "year": 2025,
+    "links": []
+  },
+  {
+    "title": "OCash: Fully Anonymous Payments between Blockchain Light Clients",
+    "authors": "Adam Blatchley Hansen, Jesper Buus Nielsen, Mark Simkin",
+    "venue": "PKC 2025",
+    "year": 2025,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "http://ia.cr/2024/246"
+      }
+    ],
+    "selected": true
+  },
+  {
+    "title": "Securely Computing One-Sided Matching Markets",
+    "authors": "James Hsin-Yu Chiang, Ivan Damgård, Claudio Orlandi, Mahak Pancholi, Mark Simkin",
+    "venue": "FC 2025",
+    "year": 2025,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "http://ia.cr/2024/1657"
+      }
+    ]
+  },
+  {
+    "title": "Foundations of Data Availability Sampling",
+    "authors": "Mathias Hall-Andersen, Mark Simkin, Benedikt Wagner",
+    "venue": "IACR Communications in Cryptology 2025",
+    "year": 2025,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "http://ia.cr/2023/1079"
+      }
+    ]
+  },
+  {
+    "title": "The Power of NAPs: Compressing OR-Proofs via Collision-Resistant Hashing",
+    "authors": "Katharina Boudgoust, Mark Simkin",
+    "venue": "TCC 2024",
+    "year": 2024,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "http://ia.cr/2024/1482"
+      }
+    ]
+  },
+  {
+    "title": "Extractable Witness Encryption for KZG Commitments and Efficient Laconic OT",
+    "authors": "Nils Fleischhacker, Mathias Hall-Andersen, Mark Simkin",
+    "venue": "Asiacrypt 2024",
+    "year": 2024,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "http://ia.cr/2024/264"
+      }
+    ]
+  },
+  {
+    "title": "Jackpot: Non-Interactive Aggregatable Lotteries",
+    "authors": "Nils Fleischhacker, Mathias Hall-Andersen, Mark Simkin, Benedikt Wagner",
+    "venue": "Asiacrypt 2024",
+    "year": 2024,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "http://ia.cr/2023/1570"
+      }
+    ]
+  },
+  {
+    "title": "Invertible Bloom Lookup Tables with Less Memory and Randomness",
+    "authors": "Nils Fleischhacker, Kasper Green Larsen, Maciej Obremski, Mark Simkin",
+    "venue": "ESA 2024",
+    "year": 2024,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2023/918"
+      }
+    ]
+  },
+  {
+    "title": "FRIDA: Data Availability Sampling from FRI",
+    "authors": "Mathias Hall-Andersen, Mark Simkin, Benedikt Wagner",
+    "venue": "CRYPTO 2024",
+    "year": 2024,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "http://ia.cr/2024/248"
+      }
+    ],
+    "selected": true
+  },
+  {
+    "title": "Chipmunk: Better Synchronized Multi-Signatures from Lattices",
+    "authors": "Nils Fleischhacker, Gottfried Herold, Mark Simkin, Zhenfei Zhang",
+    "venue": "CCS 2023",
+    "year": 2023,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2023/1820"
+      }
+    ]
+  },
+  {
+    "title": "Ramen: Souper Fast Three-Party Computation for RAM Programs",
+    "authors": "Lennart Braun, Mahak Pancholi, Rahul Rachuri, Mark Simkin",
+    "venue": "CCS 2023",
+    "year": 2023,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2023/310"
+      }
+    ]
+  },
+  {
+    "title": "Stronger Lower Bounds for Leakage-Resilient Secret Sharing",
+    "authors": "Charlotte Hoffmann, Mark Simkin",
+    "venue": "Latincrypt 2023",
+    "year": 2023,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2023/1017"
+      }
+    ]
+  },
+  {
+    "title": "How to Compress Encrypted Data",
+    "authors": "Nils Fleischhacker, Kasper Green Larsen, Mark Simkin",
+    "venue": "Eurocrypt 2023",
+    "year": 2023,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2022/1413"
+      }
+    ]
+  },
+  {
+    "title": "Threshold Private Set Intersection with Better Communication Complexity",
+    "authors": "Satrajit Ghosh, Mark Simkin",
+    "venue": "PKC 2023",
+    "year": 2023,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2023/919"
+      }
+    ]
+  },
+  {
+    "title": "Distributed Shuffling in Adversarial Environments",
+    "authors": "Kasper Green Larsen, Maciej Obremski, Mark Simkin",
+    "venue": "ITC 2023",
+    "year": 2023,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2022/560"
+      }
+    ]
+  },
+  {
+    "title": "Interactive Non-Malleable Codes Against Desynchronizing Attacks in the Multi-Party Setting",
+    "authors": "Nils Fleischhacker, Suparno Ghoshal, Mark Simkin",
+    "venue": "ITC 2023",
+    "year": 2023,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2022/1004"
+      }
+    ]
+  },
+  {
+    "title": "Squirrel: Efficient Synchronized Multi-Signatures from Lattices",
+    "authors": "Nils Fleischhacker, Mark Simkin, Zhenfei Zhang",
+    "venue": "CCS 2022",
+    "year": 2022,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2022/694"
+      }
+    ]
+  },
+  {
+    "title": "Laconic Private Set-Intersection From Pairings",
+    "authors": "Diego Aranha, Chuanwei Lin, Claudio Orlandi, Mark Simkin",
+    "venue": "CCS 2022",
+    "year": 2022,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2022/529"
+      }
+    ]
+  },
+  {
+    "title": "Caulk: Lookup Arguments in Sublinear Time",
+    "authors": "Arantxa Zapico, Vitalik Buterin, Dmitry Khovratovich, Mary Maller, Anca Nitulescu, Mark Simkin",
+    "venue": "CCS 2022",
+    "year": 2022,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2022/621"
+      }
+    ]
+  },
+  {
+    "title": "On Sufficient Oracles for Secure Computation with Identifiable Abort",
+    "authors": "Mark Simkin, Luisa Siniscalchi, Sophia Yakoubov",
+    "venue": "SCN 2022",
+    "year": 2022,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2021/151"
+      }
+    ]
+  },
+  {
+    "title": "Multiparty Computation with Covert Security and Public Verifiability",
+    "authors": "Peter Scholl, Mark Simkin, Luisa Siniscalchi",
+    "venue": "ITC 2022",
+    "year": 2022,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2021/366"
+      }
+    ]
+  },
+  {
+    "title": "Privacy Amplification with Tamperable Memory via Non-malleable Two-source Extractors",
+    "authors": "Divesh Aggarwal, Maciej Obremski, João Ribeiro, Mark Simkin, Luisa Siniscalchi",
+    "venue": "IEEE Transactions on Information Theory 2022",
+    "year": 2022,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2020/1371"
+      }
+    ]
+  },
+  {
+    "title": "Property-Preserving Hash Functions from Standard Assumptions",
+    "authors": "Nils Fleischhacker, Kasper Green Larsen, Mark Simkin",
+    "venue": "Eurocrypt 2022",
+    "year": 2022,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2021/793"
+      }
+    ]
+  },
+  {
+    "title": "On Publicly-Accountable Zero-Knowledge and Small Shuffle Arguments",
+    "authors": "Nils Fleischhacker and Mark Simkin",
+    "venue": "PKC 2021",
+    "year": 2021,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2021/228"
+      }
+    ]
+  },
+  {
+    "title": "Robust Property-Preserving Hash Functions for Hamming Distance and More",
+    "authors": "Nils Fleischhacker and Mark Simkin",
+    "venue": "Eurocrypt 2021",
+    "year": 2021,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2020/1301"
+      }
+    ]
+  },
+  {
+    "title": "The Mother of All Leakages: How to Simulate Noisy Leakages via Bounded Leakage (Almost) for Free",
+    "authors": "Gianluca Brian, Antonio Faonio, Maciej Obremski, João Ribeiro, Mark Simkin, Maciej Skórski, Daniele Venturi",
+    "venue": "Eurocrypt 2021",
+    "year": 2021,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2020/1246"
+      }
+    ]
+  },
+  {
+    "title": "Optimal Oblivious Priority Queues and Offline Oblivious RAM",
+    "authors": "Zahra Jafargholi, Kasper Green Larsen, Mark Simkin",
+    "venue": "SODA 2021",
+    "year": 2021,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2019/237"
+      }
+    ]
+  },
+  {
+    "title": "Lower Bounds for Multi-Server Oblivious RAMs",
+    "authors": "Kasper Green Larsen, Mark Simkin, Kevin Yeo",
+    "venue": "TCC 2020",
+    "year": 2020,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2019/1108"
+      }
+    ]
+  },
+  {
+    "title": "Secret Sharing Lower Bound: Either Reconstruction is Hard or Shares are Long",
+    "authors": "Kasper Green Larsen and Mark Simkin",
+    "venue": "SCN 2020",
+    "year": 2020,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2019/174"
+      }
+    ]
+  },
+  {
+    "title": "Non-Malleable Secret Sharing against Bounded Joint-Tampering Attacks in the Plain Model",
+    "authors": "Gianluca Brian, Antonio Faonio, Maciej Obremski, Mark Simkin, Daniele Venturi",
+    "venue": "CRYPTO 2020",
+    "year": 2020,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2020/725"
+      }
+    ]
+  },
+  {
+    "title": "Black-Box Transformations From Passive to Covert Security with Public Verifiability",
+    "authors": "Ivan Damgård, Claudio Orlandi, Mark Simkin",
+    "venue": "CRYPTO 2020",
+    "year": 2020,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2020/916"
+      }
+    ]
+  },
+  {
+    "title": "Use your Brain! Arithmetic 3PC For Any Modulus with Active Security",
+    "authors": "Hendrik Eerikson, Marcel Keller, Claudio Orlandi, Pille Pullonen, Joonas Puura, Mark Simkin",
+    "venue": "ITC 2020",
+    "year": 2020,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2019/164"
+      }
+    ]
+  },
+  {
+    "title": "Lower Bounds for Leakage-Resilient Secret Sharing",
+    "authors": "Jesper Buus Nielsen and Mark Simkin",
+    "venue": "Eurocrypt 2020",
+    "year": 2020,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2019/181"
+      }
+    ]
+  },
+  {
+    "title": "Perfectly Secure Oblivious RAM with Sublinear Bandwidth Overhead",
+    "authors": "Michael Raskin and Mark Simkin",
+    "venue": "Asiacrypt 2019",
+    "year": 2019,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2018/268"
+      }
+    ]
+  },
+  {
+    "title": "Stronger Leakage-Resilient and Non-Malleable Secret-Sharing Schemes for General Access Structures",
+    "authors": "Divesh Aggarwal, Ivan Damgård, Jesper Buus Nielsen, Maciej Obremski, Erick Purwanto, João Ribeiro, Mark Simkin",
+    "venue": "CRYPTO 2019",
+    "year": 2019,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2018/1147"
+      }
+    ]
+  },
+  {
+    "title": "The Communication Complexity of Threshold Private Set Intersection",
+    "authors": "Satrajit Ghosh and Mark Simkin",
+    "venue": "CRYPTO 2019",
+    "year": 2019,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2019/175"
+      }
+    ]
+  },
+  {
+    "title": "Yet Another Compiler for Active Security or: Efficient MPC Over Arbitrary Rings",
+    "authors": "Ivan Damgård, Claudio Orlandi, Mark Simkin",
+    "venue": "CRYPTO 2018",
+    "year": 2018,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2017/908"
+      }
+    ]
+  },
+  {
+    "title": "Compact Zero-Knowledge Proofs of Small Hamming Weight",
+    "authors": "Ivan Damgård, Ji Luo, Sabine Oechsner, Peter Scholl, Mark Simkin",
+    "venue": "PKC 2018",
+    "year": 2018,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2017/1041"
+      }
+    ]
+  },
+  {
+    "title": "Functional Credentials",
+    "authors": "Dominic Deuber, Matteo Maffei, Giulio Malavolta, Max Rabkin, Dominique Schröder, Mark Simkin",
+    "venue": "PETS 2018",
+    "year": 2018,
+    "links": []
+  },
+  {
+    "title": "Continuously Non-Malleable Codes with Split-State Refresh",
+    "authors": "Antonio Faonio, Jesper Buus Nielsen, Mark Simkin, Daniele Venturi",
+    "venue": "ACNS 2018",
+    "year": 2018,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2018/606"
+      }
+    ]
+  },
+  {
+    "title": "Efficient Unlinkable Sanitizable Signatures from Signatures with Rerandomizable Keys",
+    "authors": "Nils Fleischhacker, Johannes Krupp, Giulio Malavolta, Jonas Schneider, Dominique Schröder, Mark Simkin",
+    "venue": "PKC 2016",
+    "year": 2016,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2015/395"
+      }
+    ]
+  },
+  {
+    "title": "Nearly Optimal Verifiable Data Streaming",
+    "authors": "Johannes Krupp, Dominique Schröder, Mark Simkin, Dario Fiore, Giuseppe Ateniese, Stefan Nürnberger",
+    "venue": "PKC 2016",
+    "year": 2016,
+    "links": [
+      {
+        "label": "ePrint",
+        "url": "https://eprint.iacr.org/2015/333"
+      }
+    ]
+  },
+  {
+    "title": "VeriStream - A Framework for Verifiable Data Streaming",
+    "authors": "Dominique Schröder and Mark Simkin",
+    "venue": "FC 2015",
+    "year": 2015,
+    "links": []
+  },
+  {
+    "title": "Ubic - Bridging the Gap between Digital Cryptography and the Physical World",
+    "authors": "Mark Simkin, Dominique Schröder, Andreas Bulling, Mario Fritz",
+    "venue": "ESORICS 2015",
+    "year": 2015,
+    "links": []
+  },
+  {
+    "title": "WebTrust - A Comprehensive Authenticity and Integrity Framework for HTTP",
+    "authors": "Michael Backes, Rainer Gerling, Sebastian Gerling, Stefan Nürnberger, Dominique Schröder, Mark Simkin",
+    "venue": "ACNS 2014",
+    "year": 2014,
+    "links": []
+  }
+]
