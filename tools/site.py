@@ -37,7 +37,13 @@ BIO = ("I am a tenure-track professor at Aarhus University and a cryptography re
        "I received my PhD from Aarhus University in 2019, advised by Ivan Damgård and co-advised by "
        "Claudio Orlandi, and stayed on as a postdoctoral researcher with Kasper Green Larsen. On the "
        "industry side, I was a cryptography researcher at the Ethereum Foundation before joining Flashbots.")
-CONTACT = 'firstname at univariate.org'
+CONTACT = "firstname at univariate.org"
+# shown under the email, in this order: (label, url). Add or remove lines freely.
+LINKS = [
+    ("x.com/Simk1n", "https://x.com/Simk1n"),
+    ("github.com/msimkin", "https://github.com/msimkin"),
+    # ("dblp", "https://dblp.org/pid/..."),
+]
 HOME_POSTS = 5          # posts shown on the home page
 THEOREM_KINDS = ["theorem", "lemma", "corollary", "proposition", "claim", "definition", "remark", "example"]
 MONTHS = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split()
@@ -475,7 +481,8 @@ class Builder:
         cells = [pub_cell(p, pos[i]) for i, p in enumerate(selected)] + [more_cell(pos[-1], "/publications/", "All publications")]
         pubs_html = '      <ol class="mod p">\n        ' + "\n        ".join(cells) + "\n      </ol>"
         home = fill("home.html", tagline="".join(f'<span class="tl">{esc(t)}</span>' for t in split_sentences(TAGLINE)), writing=writing_grid(posts, home=True),
-                    publications=pubs_html, bio=esc(BIO), contact=CONTACT)
+                    publications=pubs_html, bio=esc(BIO), contact=esc(CONTACT),
+                    links="".join(f'<li><a href="{esc(u)}" rel="me">{esc(l)}</a></li>' for l, u in LINKS))
         self.page("index.html", home, "Mark Simkin", TAGLINE,
                   math=any(p.excerpt_has_math for p in posts[:HOME_POSTS]))
 

@@ -219,6 +219,11 @@ blockquote > p:first-child::before { content: "“"; color: var(--hi-t); } block
 @media (min-width: 681px) and (max-width: 960px) { .filler.f2 { display: block; } }
 .ab .bio { margin: 0; text-wrap: pretty; font-size: 15.5px; line-height: 1.8; color: var(--text); }
 .ab .ti { font-weight: 400; }
+.ab .links { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 6px; font-size: 14px; line-height: 1.5; }
+.ab .links a { color: var(--muted); transition: color .2s; }
+.ab .links a::after { content: " ↗"; color: var(--dim); transition: color .2s; }
+.ab .links a:hover { color: var(--ink); }
+.ab .links a:hover::after { color: var(--hi-t); }
 
 .notfound { padding-top: clamp(80px, 14vh, 180px); }
 .notfound .code404 { margin: 0 0 18px; font-size: 13px; color: var(--muted); }
