@@ -11,6 +11,7 @@ Posts are Markdown files with a small front matter block:
     ---
     title: Counting roots: the univariate Schwartz–Zippel lemma
     date: 2026-11-02
+    (an optional "|" in the title sets where the big heading breaks on wide screens)
     summary: optional one-line excerpt (otherwise the first sentence is used)
     ---
 
@@ -63,7 +64,10 @@ class Post:
     def __init__(self, path, draft):
         self.path, self.draft, self.slug = path, draft, path.stem
         meta, self.source = parse_front_matter(path.read_text(encoding="utf-8"), path)
-        self.title = meta.get("title") or self.slug.replace("-", " ").capitalize()
+        raw = meta.get("title") or self.slug.replace("-", " ").capitalize()
+        # a "|" in the title marks the preferred line break of the large post heading (wide screens only)
+        self.title_parts = [t.strip() for t in raw.split("|") if t.strip()]
+        self.title = " ".join(self.title_parts)
         d = meta.get("date")
         try:
             self.date = dt.date.fromisoformat(d) if d else dt.date.today()
@@ -536,7 +540,7 @@ class Builder:
             meta = f'<time datetime="{post.date.isoformat()}">{fmt_long(post.date)}</time><span class="sep">·</span>{post.minutes} min read'
             if post.draft:
                 meta += '<span class="sep">·</span><span class="draft">draft, not published</span>'
-            content = fill("post.html", slug=esc(post.slug), title_html=nowrap_title(post.title), meta=meta,
+            content = fill("post.html", slug=esc(post.slug), title_html=' <br class="tb">'.join(nowrap_title(t) for t in post.title_parts), meta=meta,
                            body=post.body, post_foot=foot)
             self.page(f"writing/{post.slug}/index.html", content, f"{post.title} · Mark Simkin",
                       post.summary or post.ex1 or TAGLINE, current="writing", math=post.has_math,

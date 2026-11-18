@@ -148,6 +148,8 @@ article { padding-top: clamp(64px, 9vw, 120px); container-type: inline-size; }
 .post-head .crumb { margin: 0 0 22px; font-size: 13px; color: var(--muted); }
 .post-head .crumb a:hover { color: var(--ink); }
 .post-head h1 { margin: 0 0 22px; max-width: none; font: 400 clamp(2rem, 4vw, 3.4rem)/1.08 var(--mono); letter-spacing: -.055em; color: var(--ink); text-wrap: balance; }
+/* manual title break ("|" in the front matter): honoured on wide screens, ignored on phones */
+@media (max-width: 680px) { .post-head h1 br.tb { display: none; } }
 .meta { margin: 0; font-size: 13px; color: var(--muted); }
 .meta .sep { color: var(--dim); margin: 0 .8ch; }
 .meta .draft { color: var(--hi-t); }

@@ -43,6 +43,10 @@ Ends with a box.
 :::
 ```
 
+A `|` in the title sets where the large post heading breaks on wide screens
+(`title: Provable security, random oracles, | and hash functions`); it is ignored on phones and
+everywhere else the title appears. Without it, the browser balances the lines itself.
+
 Code blocks are fenced as usual, optionally with a file name after the language
 (` ```python horner.py `). Also supported: footnotes (`[^1]`), tables, `\$` for a literal dollar sign,
 and `\( \)` / `\[ \]` as math delimiters. Math is rendered in the browser with KaTeX (self-hosted in
