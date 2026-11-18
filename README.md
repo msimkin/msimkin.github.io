@@ -14,8 +14,8 @@ git add posts/counting-roots.md && git commit -m "Publish counting-roots" && git
 ```
 
 - `drafts/` is ignored by git: drafts never leave your machine. The preview shows them with a
-  "draft" label; the public site does not include them. `drafts/example-counting-roots.md` shows every
-  feature (it is local only).
+  "draft" label; the public site does not include them. `make new` starts each draft from
+  `templates/post-template.md`, which shows the math and lemma/proof syntax.
 - `posts/` holds published posts. Everything in it is public after a push.
 - The first `make` run creates a local Python environment in `.venv/` (Markdown and Pygments).
 
