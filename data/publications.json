@@ -1,5 +1,20 @@
 [
   {
+    "title": "Private Set Intersection with Instance-Dependent Communication",
+    "authors": "Aron van Baarsen, Magnus Jensen, Lawrence Roy, Mark Simkin",
+    "venue": "FC 2027",
+    "year": 2027,
+    "links": [],
+    "selected": true
+  },
+  {
+    "title": "Byzantine Auctions",
+    "authors": "Simon Kamp, Mark Simkin",
+    "venue": "In Submission",
+    "year": null,
+    "links": []
+  },
+  {
     "title": "Faster Data Structures Have Less Access Pattern Leakage",
     "authors": "Mathias Hall-Andersen, Mark Simkin, Benedikt Wagner",
     "venue": "In Submission",
@@ -74,7 +89,8 @@
     "authors": "Kasper Green Larsen, Mark Simkin",
     "venue": "TCC 2025",
     "year": 2025,
-    "links": []
+    "links": [],
+    "selected": true
   },
   {
     "title": "OCash: Fully Anonymous Payments between Blockchain Light Clients",
@@ -86,8 +102,7 @@
         "label": "ePrint",
         "url": "http://ia.cr/2024/246"
       }
-    ],
-    "selected": true
+    ]
   },
   {
     "title": "Securely Computing One-Sided Matching Markets",
@@ -99,7 +114,8 @@
         "label": "ePrint",
         "url": "http://ia.cr/2024/1657"
       }
-    ]
+    ],
+    "selected": true
   },
   {
     "title": "Foundations of Data Availability Sampling",
@@ -111,7 +127,8 @@
         "label": "ePrint",
         "url": "http://ia.cr/2023/1079"
       }
-    ]
+    ],
+    "selected": true
   },
   {
     "title": "The Power of NAPs: Compressing OR-Proofs via Collision-Resistant Hashing",
@@ -135,7 +152,8 @@
         "label": "ePrint",
         "url": "http://ia.cr/2024/264"
       }
-    ]
+    ],
+    "selected": true
   },
   {
     "title": "Jackpot: Non-Interactive Aggregatable Lotteries",
@@ -184,7 +202,8 @@
         "label": "ePrint",
         "url": "https://eprint.iacr.org/2023/1820"
       }
-    ]
+    ],
+    "selected": true
   },
   {
     "title": "Ramen: Souper Fast Three-Party Computation for RAM Programs",
