@@ -1,8 +1,10 @@
-.venv/
-_site/
-_site.tmp/
-_preview/
-_preview.tmp/
-drafts/
-__pycache__/
 .DS_Store
+.venv/
+__pycache__/
+_preview.tmp*/
+_preview.tmp/
+_preview/
+_site.tmp*/
+_site.tmp/
+_site/
+drafts/

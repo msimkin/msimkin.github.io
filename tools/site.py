@@ -492,7 +492,7 @@ class Builder:
     def build(self):
         posts = load_posts(self.drafts)
         pubs = json.loads((ROOT / "data/publications.json").read_text(encoding="utf-8"))
-        tmp = self.out.with_name(self.out.name + ".tmp")
+        tmp = self.out.with_name(f"{self.out.name}.tmp{os.getpid()}")
         if tmp.exists():
             shutil.rmtree(tmp)
         final_out, self.out = self.out, tmp
