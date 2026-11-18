@@ -168,6 +168,8 @@ def render_markdown(src):
 
     # 1. fenced code blocks (anywhere, also inside ::: blocks)
     src = FENCE.sub(lambda m: "\n" + m.group("ind") + stash.put("BLOCK", highlight_code(m.group("code"), m.group("info").strip())) + "\n", src)
+    # notes to self (<!-- ... -->) never reach the published page, not even its source
+    src = re.sub(r"<!--.*?-->", "", src, flags=re.S)
 
     # 2. math, outside inline code spans
     def stash_math(text):
