@@ -202,9 +202,17 @@ def render_markdown(src):
             j += 1
         inner = convert("\n".join(lines[i + 1:j]))
         if kind == "proof":
-            label = f'<i class="lbl">{esc(title) if title else "Proof"}.</i> '
+            # collapsible: "::: proof" starts closed, "::: proof open" starts open,
+            # any further words replace the label ("::: proof Proof sketch")
+            words = title.split()
+            is_open = bool(words) and words[0].lower() == "open"
+            label = " ".join(words[1:] if is_open else words) or "Proof"
             inner = re.sub(r"(</p>)(?![\s\S]*</p>)", '<span class="qed">∎</span>\\1', inner, count=1) if "</p>" in inner else inner + '<span class="qed">∎</span>'
-            cls = "proof"
+            block = (f'<details class="proof"{" open" if is_open else ""}><summary><i class="lbl">{esc(label)}</i></summary>'
+                     f'<div class="proof-body">{inner}</div></details>')
+            out.append("\n" + stash.put("BLOCK", block) + "\n")
+            i = j + 1
+            continue
         else:
             n = counters["kinds"].get(kind, 0) + 1
             counters["kinds"][kind] = n

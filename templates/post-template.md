@@ -19,5 +19,5 @@ A statement. Numbered automatically.
 :::
 
 ::: proof
-The argument. A ∎ is added at the end.
+The argument. Collapsed by default (`::: proof open` to show it); a ∎ is added at the end.
 :::

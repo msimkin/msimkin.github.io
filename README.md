@@ -39,9 +39,12 @@ Numbered automatically (also theorem, corollary, proposition, claim, definition,
 :::
 
 ::: proof
-Ends with a box.
+Collapsed by default; ends with a box.
 :::
 ```
+
+Proofs are collapsible: `::: proof` starts closed, `::: proof open` starts open, and any further words
+replace the label (`::: proof Proof sketch`, `::: proof open Proof sketch`).
 
 A `|` in the title sets where the large post heading breaks on wide screens
 (`title: Provable security, random oracles, | and hash functions`); it is ignored on phones and
