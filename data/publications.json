@@ -8,13 +8,6 @@
     "selected": true
   },
   {
-    "title": "Byzantine Auctions",
-    "authors": "Simon Kamp, Mark Simkin",
-    "venue": "In Submission",
-    "year": null,
-    "links": []
-  },
-  {
     "title": "Faster Data Structures Have Less Access Pattern Leakage",
     "authors": "Mathias Hall-Andersen, Mark Simkin, Benedikt Wagner",
     "venue": "In Submission",
