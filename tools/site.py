@@ -32,7 +32,7 @@ from pygments.util import ClassNotFound
 
 ROOT = Path(__file__).resolve().parent.parent
 BASE_URL = "https://univariate.org"
-TAGLINE = ("Cryptography researcher at Flashbots and tenure-track professor at Aarhus University. "
+TAGLINE = ("Cryptography researcher at Flashbots. Tenure-track professor at Aarhus University. "
            "I write here about cryptography, algorithms, and the math in between.")
 BIO = ("I am a tenure-track professor at Aarhus University and a cryptography researcher at Flashbots. "
        "I received my PhD from Aarhus University in 2019, advised by Ivan Damgård and co-advised by "
