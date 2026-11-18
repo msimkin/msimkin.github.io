@@ -580,13 +580,13 @@ class Builder:
 # commands
 
 def cmd_build(args):
-    posts = Builder(args.out, args.drafts).build()
+    posts = Builder(args.out, args.drafts, reload=args.reload).build()
     print(f"built {args.out}/ with {len(posts)} post(s){' (drafts included)' if args.drafts else ''}")
 
 
 def watched_state():
     files = []
-    for d in ["posts", "drafts", "templates", "static", "data"]:
+    for d in ["posts", "drafts", "templates", "static", "data", "tools"]:
         if (ROOT / d).is_dir():
             files += [p for p in (ROOT / d).rglob("*") if p.is_file()]
     return {str(p): p.stat().st_mtime for p in files}
@@ -597,12 +597,15 @@ def cmd_serve(args):
     builder_state = {"version": "0"}
 
     def rebuild():
-        try:
-            Builder(out, drafts=True, reload=True).build()
+        # build in a fresh process, so changes to this script take effect without a restart
+        import subprocess
+        r = subprocess.run([sys.executable, str(Path(__file__).resolve()), "build", "--drafts", "--reload",
+                            "--out", str(out)], capture_output=True, text=True)
+        if r.returncode == 0:
             builder_state["version"] = str(time.time())
             print(time.strftime("%H:%M:%S"), "rebuilt")
-        except SystemExit as e:
-            print("build error:", e)
+        else:
+            print("build error:", (r.stderr or r.stdout).strip())
 
     rebuild()
 
@@ -683,7 +686,7 @@ def cmd_publish(args):
 def main():
     ap = argparse.ArgumentParser(description="univariate.org site generator")
     sub = ap.add_subparsers(dest="cmd", required=True)
-    b = sub.add_parser("build"); b.add_argument("--drafts", action="store_true"); b.add_argument("--out", default=str(ROOT / "_site"))
+    b = sub.add_parser("build"); b.add_argument("--drafts", action="store_true"); b.add_argument("--reload", action="store_true", help=argparse.SUPPRESS); b.add_argument("--out", default=str(ROOT / "_site"))
     s = sub.add_parser("serve"); s.add_argument("--port", type=int, default=8000); s.add_argument("--host", default="127.0.0.1")
     n = sub.add_parser("new"); n.add_argument("slug"); n.add_argument("--title")
     p = sub.add_parser("publish"); p.add_argument("slug")
