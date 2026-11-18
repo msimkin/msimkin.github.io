@@ -46,6 +46,8 @@ LINKS = [
     ("dblp", "https://dblp.org/pid/58/2782sb.html", "dblp"),
 ]
 HOME_POSTS = 5          # posts shown on the home page
+# Cloudflare Web Analytics (cookie-free). Only added to the public build, never to `make preview`.
+ANALYTICS_TOKEN = "865f9d52b71443d09a1da9cc72a6e865"
 THEOREM_KINDS = ["theorem", "lemma", "corollary", "proposition", "claim", "definition", "remark", "example"]
 MONTHS = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split()
 FULL_MONTHS = ("January February March April May June July August September October November "
@@ -443,6 +445,13 @@ MATH_HEAD = ('<link rel="stylesheet" href="/static/katex/katex.min.css">\n'
              '<script defer src="/static/katex/auto-render.min.js" onload="univariateMath()"></script>')
 
 
+def analytics_tag(local):
+    if local or not ANALYTICS_TOKEN:
+        return ""
+    return ("<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' "
+            f"data-cf-beacon='{{\"token\": \"{ANALYTICS_TOKEN}\"}}'></script>")
+
+
 def fill(template, **values):
     text = (TEMPLATES / template).read_text(encoding="utf-8")
     def sub(m):
@@ -468,7 +477,8 @@ class Builder:
                          ".catch(function(){})},700)})();</script>")
         doc = fill("base.html", title=esc(title), description=esc(description), url=url, og_type=og_type,
                    og_title=esc(og_title or title), version=self.version, math_head=MATH_HEAD if math else "",
-                   nav=nav(current), content=content, year=dt.date.today().year, reload=reload_js)
+                   nav=nav(current), content=content, year=dt.date.today().year, reload=reload_js,
+                   analytics=analytics_tag(self.drafts or self.reload))
         path = self.out / rel
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(doc, encoding="utf-8")
