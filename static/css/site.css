@@ -147,7 +147,7 @@ article { padding-top: clamp(64px, 9vw, 120px); container-type: inline-size; }
 .post-head { margin: 0 0 56px; }
 .post-head .crumb { margin: 0 0 22px; font-size: 13px; color: var(--muted); }
 .post-head .crumb a:hover { color: var(--ink); }
-.post-head h1 { margin: 0 0 22px; max-width: 24ch; font: 400 clamp(2rem, 4vw, 3.4rem)/1.08 var(--mono); letter-spacing: -.055em; color: var(--ink); text-wrap: balance; }
+.post-head h1 { margin: 0 0 22px; max-width: none; font: 400 clamp(2rem, 4vw, 3.4rem)/1.08 var(--mono); letter-spacing: -.055em; color: var(--ink); text-wrap: balance; }
 .meta { margin: 0; font-size: 13px; color: var(--muted); }
 .meta .sep { color: var(--dim); margin: 0 .8ch; }
 .meta .draft { color: var(--hi-t); }
